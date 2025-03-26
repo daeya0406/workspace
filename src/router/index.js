@@ -1,13 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import DashboardView from '@/views/DashboardView.vue'
+import Asdf from '../pages/asdf.vue'; // 파일 경로 확인
 
 const routes = [
     {
         path: '/',
         name: 'DashboardView',
         component: DashboardView
-    }
-    // 추후 다른 라우트 추가 가능
+    },
+    {
+        path: '/asdf',
+        name: 'Asdf',
+        component: Asdf,
+    },
 ]
 
 const router = createRouter({
