@@ -1,0 +1,143 @@
+// Heading
+@mixin Heading-XXL {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+}
+@mixin Heading-XL {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+@mixin Heading-L {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  font-weight: 700;
+}
+@mixin Heading-M {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+@mixin Heading-S {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+}
+@mixin Heading-XS {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+}
+@mixin Heading-XXS {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+// Body
+@mixin Body-XL-500 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.3125rem;
+  line-height: 2.125rem;
+  font-weight: 500;
+}
+@mixin Body-L-500 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+}
+@mixin Body-M-500 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+@mixin Body-S-500 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+@mixin Body-XS-500 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+@mixin Body-XXS-500 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 500;
+}
+@mixin Body-XL-400 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.3125rem;
+  line-height: 2.125rem;
+  font-weight: 400;
+}
+@mixin Body-L-400 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+}
+@mixin Body-M-400 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+@mixin Body-S-400 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+@mixin Body-XS-400 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+@mixin Body-XXS-400 {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 400;
+}
+
+// Button
+@mixin Button-L {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+@mixin Button-M {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+}
+@mixin Button-S {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+@mixin Button-XS {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 500;
+}
