@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier --write \"src/**/*.{js,vue}\"",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -49,17 +50,24 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "node": true
+      "node": true,
+      "vue/setup-compiler-macros": true
     },
     "extends": [
       "plugin:vue/vue3-essential",
       "eslint:recommended",
-      "plugin:storybook/recommended"
+      "plugin:storybook/recommended",
+      "@vue/prettier"
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off",
+      "vue/multi-word-component-names": "off",
+      "quotes": ["error", "single", { "avoidEscape": true }]
+    }
   },
   "browserslist": [
     "> 1%",

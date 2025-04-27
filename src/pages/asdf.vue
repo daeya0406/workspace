@@ -7,19 +7,18 @@
 </template>
 
 <script>
-
 export default {
-  name: "ExamplePage",
+  name: 'ExamplePage',
   data() {
     return {
-      count: 0,
+      count: 0
     };
   },
   methods: {
     increment() {
       this.count++;
-    },
-  },
+    }
+  }
 };
 </script>
 

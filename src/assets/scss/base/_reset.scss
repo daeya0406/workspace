@@ -1,0 +1,166 @@
+@font-face {
+    font-display: fallback;
+    font-family: "SUIT";
+    font-weight: 300;
+    src: url("@/assets/fonts/SUIT-Light.woff2") format("woff2");
+  }
+  @font-face {
+    font-display: fallback;
+    font-family: "SUIT";
+    font-weight: 400;
+    src: url("@/assets/fonts/SUIT-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-display: fallback;
+    font-family: "SUIT";
+    font-weight: 500;
+    src: url("@/assets/fonts/SUIT-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-display: fallback;
+    font-family: "SUIT";
+    font-weight: 700;
+    src: url("@/assets/fonts/SUIT-Bold.woff2") format("woff2");
+  }
+  
+  // reset.css
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  button,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  span,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  input,
+  input::placeholder,
+  textarea,
+  video {
+    font-family: "SUIT", "Noto Sans KR", sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  a[href^="tel"],
+  a[href^="mailto"] {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background-color: #f2f4f8;
+  }
+  img.logo,img.icon{
+    aspect-ratio: 1/1;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings: "wght" 300;
+  }
+  .carousel {
+    padding: 0 !important;
+  }
+  .is-dragging {
+    position: relative;
+    cursor: grab;
+  
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  .no-border {
+    border: 0 !important;
+    &:before{
+      content:none !important;
+    }
+  }
