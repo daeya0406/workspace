@@ -31,4 +31,5 @@ yarn-error.log*
 *.sw?
 
 # Storybook
-storybook-static 
+storybook-static
+*storybook.log
