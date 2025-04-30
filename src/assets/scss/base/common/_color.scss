@@ -1,4 +1,49 @@
-@each $name, $color in $colors {
-  .text-#{$name} { color: $color !important; }
-  .bg-#{$name} { background-color: $color !important; }
+$primary900: #0f43a6;
+$primary600: #145ce6;
+$primary500: #3073f2;
+$primary400: #4d91ff;
+$primary300: #80b0ff;
+$primary200: #a6c8ff;
+$primary100: #cce1ff;
+$primary50: #e8effd;
+
+$secondary600: #ffd700;
+$secondary300: #ffeb99;
+$secondary100: #fff4cc;
+
+$white: #fff;
+$gray50: #f4f6fa;
+$gray100: #ecf0f4;
+$gray200: #dee2e6;
+$gray300: #cfd4d9;
+$gray400: #acb3ba;
+$gray500: #8c939a;
+$gray600: #6e757c;
+$gray700: #575e64;
+$gray800: #353a3f;
+$gray900: #1f2429;
+$black: #000000;
+
+$red600: #e9304b;
+$red500: #ff4d67;
+$green600: #3cc263;
+$orange600: #ff8502;
+
+$naver-green: #03c75a;
+$kakao-yellow: #ffe500;
+$apple-black: #000;
+
+$trait-blue50: #ebf6ff;
+$trait-blue600: #30a2ff;
+$trait-mint50: #ecfaf8;
+$trait-mint600: #38c8b5;
+$trait-marine50: #e8effd;
+$trait-marine600: #145ce6;
+$trait-red50: #fdebed;
+$trait-red600: #e9304b;
+
+$landing-black: #181a1c;
+
+.primary-color {
+  color: $primary600;
 }

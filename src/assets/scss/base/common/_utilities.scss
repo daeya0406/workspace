@@ -14,7 +14,6 @@
   .pe-#{$size} { padding-right: $value !important; }
   .px-#{$size} { padding-left: $value !important; padding-right: $value !important; }
   .py-#{$size} { padding-top: $value !important; padding-bottom: $value !important; }
-  // 반응형
   @each $break, $bp in $breakpoints {
     @media (min-width: $bp) {
       .m-#{$break}-#{$size} { margin: $value !important; }
