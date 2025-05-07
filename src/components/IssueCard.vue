@@ -11,7 +11,7 @@ export default {
   props: {
     issue: { type: Object, required: true }
   }
-}
+};
 </script>
 
 <style scoped>

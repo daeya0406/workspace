@@ -13,18 +13,18 @@
 </template>
 
 <script>
-import DefaultLayout from '@/layouts/DefaultLayout.vue'
-import BoardColumn from '@/components/BoardColumn.vue'
-import { useIssueStore } from '@/store/issues'
+import DefaultLayout from '@/layouts/DefaultLayout.vue';
+import BoardColumn from '@/components/BoardColumn.vue';
+import { useIssueStore } from '@/store/issues';
 
 export default {
   name: 'DashboardView',
   components: { DefaultLayout, BoardColumn },
   setup() {
-    const issueStore = useIssueStore()
-    return { issues: issueStore.issues }
+    const issueStore = useIssueStore();
+    return { issues: issueStore.issues };
   }
-}
+};
 </script>
 
 <style scoped>

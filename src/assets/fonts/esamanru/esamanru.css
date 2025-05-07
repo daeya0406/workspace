@@ -1,0 +1,18 @@
+@font-face {
+  font-display: fallback;
+  font-family: "esamanru";
+  font-weight: 300;
+  src: url("./esamanru-Light.woff2") format("woff2");
+}
+@font-face {
+  font-display: fallback;
+  font-family: "esamanru";
+  font-weight: 400;
+  src: url("./esamanru-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-display: fallback;
+  font-family: "esamanru";
+  font-weight: 700;
+  src: url("./esamanru-Bold.woff2") format("woff2");
+}
