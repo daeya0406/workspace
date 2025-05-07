@@ -3,55 +3,89 @@
   font-size: 48px;
   line-height: 1.2;
   letter-spacing: -0.4px;
-  @media (max-width: 1023px) { font-size: 32px; }
+  @media (max-width: 1023px) {
+    font-size: 32px;
+  }
 }
 @mixin heading1 {
   font-size: 32px;
   line-height: 1.2;
   letter-spacing: -0.4px;
-  @media (max-width: 1023px) { font-size: 24px; }
+  @media (max-width: 1023px) {
+    font-size: 24px;
+  }
 }
 @mixin heading2 {
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: -0.4px;
-  @media (max-width: 1023px) { font-size: 22px; }
+  @media (max-width: 1023px) {
+    font-size: 22px;
+  }
 }
-@mixin heading3 { font-size: 20px; line-height: 1.2; letter-spacing: -0.4px; }
-@mixin subheading { font-size: 18px; line-height: 1.2; letter-spacing: -0.3px; }
-@mixin body1    { font-size: 16px; line-height: 1.5; letter-spacing: -0.3px; }
-@mixin body2    { font-size: 14px; line-height: 1.5; letter-spacing: -0.3px; }
-@mixin caption  { font-size: 12px; line-height: 1.5; letter-spacing: -0.3px; }
+@mixin heading3 {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+}
+@mixin subheading {
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+@mixin body1 {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+@mixin body2 {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+@mixin caption {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
 
 // SUIT → Pretendard 전환 예시
 @font-face {
   font-display: fallback;
-  font-family: "SUIT";
+  font-family: 'SUIT';
   font-weight: 300;
-  src: url("@/assets/fonts/SUIT-Light.woff2") format("woff2");
+  src: url('@/assets/fonts/SUIT-Light.woff2') format('woff2');
 }
 @font-face {
   font-display: fallback;
-  font-family: "SUIT";
+  font-family: 'SUIT';
   font-weight: 400;
-  src: url("@/assets/fonts/SUIT-Regular.woff2") format("woff2");
+  src: url('@/assets/fonts/SUIT-Regular.woff2') format('woff2');
 }
 @font-face {
   font-display: fallback;
-  font-family: "SUIT";
+  font-family: 'SUIT';
   font-weight: 500;
-  src: url("@/assets/fonts/SUIT-Medium.woff2") format("woff2");
+  src: url('@/assets/fonts/SUIT-Medium.woff2') format('woff2');
 }
 @font-face {
   font-display: fallback;
-  font-family: "SUIT";
+  font-family: 'SUIT';
   font-weight: 700;
-  src: url("@/assets/fonts/SUIT-Bold.woff2") format("woff2");
+  src: url('@/assets/fonts/SUIT-Bold.woff2') format('woff2');
 }
 
 // 레이아웃/유틸 믹스인
-@mixin flex-center { display: flex; justify-content: center; align-items: center; }
-@mixin ellipsis    { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 @mixin respond($breakpoint) {
   @media (max-width: $breakpoint) {
     @content;
@@ -59,22 +93,107 @@
 }
 
 // Pretendard용 Heading/Body/Button 믹스인 (원하는 건 그대로 복붙)
-@mixin Heading-XXL { font-family: 'Pretendard'; font-size:2rem; line-height:2.75rem; font-weight:700; }
-@mixin Heading-XL  { font-family: 'Pretendard'; font-size:1.75rem; line-height:2.5rem;  font-weight:700; }
-@mixin Heading-L   { font-family: 'Pretendard'; font-size:1.5rem;  line-height:2.125rem;font-weight:700; }
-@mixin Heading-M   { font-family: 'Pretendard'; font-size:1.25rem; line-height:1.75rem; font-weight:700; }
-@mixin Heading-S   { font-family: 'Pretendard'; font-size:1.125rem;line-height:1.625rem;font-weight:700; }
-@mixin Heading-XS  { font-family: 'Pretendard'; font-size:1rem;    line-height:1.375rem;font-weight:700; }
-@mixin Heading-XXS { font-family: 'Pretendard'; font-size:0.875rem;line-height:1.25rem; font-weight:700; }
+@mixin Heading-XXL {
+  font-family: 'Pretendard';
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+}
+@mixin Heading-XL {
+  font-family: 'Pretendard';
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+@mixin Heading-L {
+  font-family: 'Pretendard';
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  font-weight: 700;
+}
+@mixin Heading-M {
+  font-family: 'Pretendard';
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+@mixin Heading-S {
+  font-family: 'Pretendard';
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 700;
+}
+@mixin Heading-XS {
+  font-family: 'Pretendard';
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-weight: 700;
+}
+@mixin Heading-XXS {
+  font-family: 'Pretendard';
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
 
-@mixin Body-XL-500 { font-family: 'Pretendard'; font-size:1.3125rem;line-height:2.125rem;font-weight:500; }
-@mixin Body-L-500  { font-family: 'Pretendard'; font-size:1.1875rem;line-height:1.875rem;font-weight:500; }
-@mixin Body-M-500  { font-family: 'Pretendard'; font-size:1.0625rem;line-height:1.75rem; font-weight:500; }
-@mixin Body-S-500  { font-family: 'Pretendard'; font-size:0.9375rem;line-height:1.5rem;  font-weight:500; }
-@mixin Body-XS-500 { font-family: 'Pretendard'; font-size:0.8125rem;line-height:1.25rem; font-weight:500; }
-@mixin Body-XXS-500{ font-family: 'Pretendard'; font-size:0.625rem;line-height:0.75rem;  font-weight:500; }
+@mixin Body-XL-500 {
+  font-family: 'Pretendard';
+  font-size: 1.3125rem;
+  line-height: 2.125rem;
+  font-weight: 500;
+}
+@mixin Body-L-500 {
+  font-family: 'Pretendard';
+  font-size: 1.1875rem;
+  line-height: 1.875rem;
+  font-weight: 500;
+}
+@mixin Body-M-500 {
+  font-family: 'Pretendard';
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+@mixin Body-S-500 {
+  font-family: 'Pretendard';
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+@mixin Body-XS-500 {
+  font-family: 'Pretendard';
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+@mixin Body-XXS-500 {
+  font-family: 'Pretendard';
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  font-weight: 500;
+}
 
-@mixin Button-L   { font-family: 'Pretendard'; font-size:1.0625rem;line-height:1.25rem; font-weight:500; }
-@mixin Button-M   { font-family: 'Pretendard'; font-size:0.9375rem;line-height:1.125rem;font-weight:500; }
-@mixin Button-S   { font-family: 'Pretendard'; font-size:0.8125rem;line-height:1rem;   font-weight:500; }
-@mixin Button-XS  { font-family: 'Pretendard'; font-size:0.75rem;   line-height:0.875rem;font-weight:500; }
+@mixin Button-L {
+  font-family: 'Pretendard';
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+@mixin Button-M {
+  font-family: 'Pretendard';
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+}
+@mixin Button-S {
+  font-family: 'Pretendard';
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+@mixin Button-XS {
+  font-family: 'Pretendard';
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  font-weight: 500;
+}

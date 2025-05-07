@@ -1,19 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "baseUrl": "./",
-    "moduleResolution": "node",
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "forceConsistentCasingInFileNames": false,
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
-  }
+      "~/*": ["./*"],
+      "~img/*": ["./assets/img/*"],
+      "~css/*": ["./assets/css/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules/*", "dist", "**/dist/*"]
 }

@@ -1,36 +1,40 @@
 $spacers: (
-        0: 0,
-        1: 0.25rem,  // 4px
-        2: 0.5rem,   // 8px
-        3: 1rem,     // 16px
-        4: 1.5rem,   // 24px
-        5: 2.5rem,   // 40px
+  0: 0,
+  1: 0.25rem,
+  // 4px
+  2: 0.5rem,
+  // 8px
+  3: 1rem,
+  // 16px
+  4: 1.5rem,
+  // 24px
+  5: 2.5rem // 40px
 );
 
 $breakpoints: (
-        sm: 576px,
-        md: 768px,
-        lg: 1200px
+  sm: 576px,
+  md: 768px,
+  lg: 1200px
 );
 
 $font-sizes: (
-        11: 11px,
-        13: 13px,
-        16: 16px,
-        20: 20px
+  11: 11px,
+  13: 13px,
+  16: 16px,
+  20: 20px
 );
 
 $font-weights: (
-        300: 300,
-        400: 400,
-        500: 500,
-        600: 600
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600
 );
 
 $colors: (
-        primary: #006899,
-        danger: #ff0000,
-        gray: #999,
-        white: #fff,
-        black: #333
+  primary: #006899,
+  danger: #ff0000,
+  gray: #999,
+  white: #fff,
+  black: #333
 );

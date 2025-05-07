@@ -1,74 +1,183 @@
 // Color utilities (.text-*, .bg-*)
 @each $name, $color in $colors {
-  .text-#{$name} { color: $color !important; }
-  .bg-#{$name}   { background-color: $color !important; }
+  .text-#{$name} {
+    color: $color !important;
+  }
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
 }
 
 // Display utilities
-.d-block        { display: block !important; }
-.d-inline       { display: inline !important; }
-.d-inline-block{ display: inline-block !important; }
-.d-none         { display: none !important; }
+.d-block {
+  display: block !important;
+}
+.d-inline {
+  display: inline !important;
+}
+.d-inline-block {
+  display: inline-block !important;
+}
+.d-none {
+  display: none !important;
+}
 
 @each $bp, $bp-val in $breakpoints {
   @media (min-width: $bp-val) {
-    .d-#{$bp}-block { display: block !important; }
-    .d-#{$bp}-none  { display: none !important; }
+    .d-#{$bp}-block {
+      display: block !important;
+    }
+    .d-#{$bp}-none {
+      display: none !important;
+    }
   }
 }
 
 // Float & clearfix
-.float-left  { float: left !important; }
-.float-right { float: right !important; }
-.clearfix::after { content: ""; display: table; clear: both; }
+.float-left {
+  float: left !important;
+}
+.float-right {
+  float: right !important;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 // Helpers
-.rounded   { border-radius:   4px !important; }
-.rounded-8 { border-radius:   8px !important; }
-.shadow    { box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important; }
-.sr-only   { position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+.rounded {
+  border-radius: 4px !important;
+}
+.rounded-8 {
+  border-radius: 8px !important;
+}
+.shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 // Flexbox utilities
-.flex         { display: flex !important; }
-.inline-flex  { display: inline-flex !important; }
-.flex-row     { flex-direction: row !important; }
-.flex-column  { flex-direction: column !important; }
-.flex-wrap    { flex-wrap: wrap !important; }
-.flex-nowrap  { flex-wrap: nowrap !important; }
-.justify-center { justify-content: center !important; }
-.justify-between{ justify-content: space-between !important; }
-.justify-end    { justify-content: flex-end !important; }
-.align-center   { align-items: center !important; }
-.align-start    { align-items: flex-start !important; }
-.align-end      { align-items: flex-end !important; }
-.align-baseline { align-items: baseline !important; }
-.gap-8    { gap: 8px !important; }
-.gap-16   { gap: 16px !important; }
-.gap-24   { gap: 24px !important; }
-.gap-40   { gap: 40px !important; }
+.flex {
+  display: flex !important;
+}
+.inline-flex {
+  display: inline-flex !important;
+}
+.flex-row {
+  flex-direction: row !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+.justify-center {
+  justify-content: center !important;
+}
+.justify-between {
+  justify-content: space-between !important;
+}
+.justify-end {
+  justify-content: flex-end !important;
+}
+.align-center {
+  align-items: center !important;
+}
+.align-start {
+  align-items: flex-start !important;
+}
+.align-end {
+  align-items: flex-end !important;
+}
+.align-baseline {
+  align-items: baseline !important;
+}
+.gap-8 {
+  gap: 8px !important;
+}
+.gap-16 {
+  gap: 16px !important;
+}
+.gap-24 {
+  gap: 24px !important;
+}
+.gap-40 {
+  gap: 40px !important;
+}
 
 // Margin/Padding utilities
 @each $size, $val in $spacers {
-  .m-#{$size}   { margin:        $val !important; }
-  .mt-#{$size}  { margin-top:    $val !important; }
-  .mb-#{$size}  { margin-bottom: $val !important; }
-  .ms-#{$size}  { margin-left:   $val !important; }
-  .me-#{$size}  { margin-right:  $val !important; }
-  .mx-#{$size}  { margin-left:   $val !important; margin-right: $val !important; }
-  .my-#{$size}  { margin-top:    $val !important; margin-bottom:$val !important; }
+  .m-#{$size} {
+    margin: $val !important;
+  }
+  .mt-#{$size} {
+    margin-top: $val !important;
+  }
+  .mb-#{$size} {
+    margin-bottom: $val !important;
+  }
+  .ms-#{$size} {
+    margin-left: $val !important;
+  }
+  .me-#{$size} {
+    margin-right: $val !important;
+  }
+  .mx-#{$size} {
+    margin-left: $val !important;
+    margin-right: $val !important;
+  }
+  .my-#{$size} {
+    margin-top: $val !important;
+    margin-bottom: $val !important;
+  }
 
-  .p-#{$size}   { padding:       $val !important; }
-  .pt-#{$size}  { padding-top:   $val !important; }
-  .pb-#{$size}  { padding-bottom:$val !important; }
-  .ps-#{$size}  { padding-left:  $val !important; }
-  .pe-#{$size}  { padding-right: $val !important; }
-  .px-#{$size}  { padding-left:  $val !important; padding-right: $val !important; }
-  .py-#{$size}  { padding-top:   $val !important; padding-bottom:$val !important; }
+  .p-#{$size} {
+    padding: $val !important;
+  }
+  .pt-#{$size} {
+    padding-top: $val !important;
+  }
+  .pb-#{$size} {
+    padding-bottom: $val !important;
+  }
+  .ps-#{$size} {
+    padding-left: $val !important;
+  }
+  .pe-#{$size} {
+    padding-right: $val !important;
+  }
+  .px-#{$size} {
+    padding-left: $val !important;
+    padding-right: $val !important;
+  }
+  .py-#{$size} {
+    padding-top: $val !important;
+    padding-bottom: $val !important;
+  }
 
   @each $bp, $bp-val in $breakpoints {
     @media (min-width: $bp-val) {
-      .m-#{$bp}-#{$size} { margin:        $val !important; }
-      .p-#{$bp}-#{$size} { padding:       $val !important; }
+      .m-#{$bp}-#{$size} {
+        margin: $val !important;
+      }
+      .p-#{$bp}-#{$size} {
+        padding: $val !important;
+      }
       // ...필요 시 나머지도 동일 생성
     }
   }

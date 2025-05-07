@@ -6,81 +6,81 @@ $primary400: #4d91ff;
 $primary300: #80b0ff;
 $primary200: #a6c8ff;
 $primary100: #cce1ff;
-$primary50:  #e8effd;
+$primary50: #e8effd;
 
 $secondary600: #ffd700;
 $secondary300: #ffeb99;
 $secondary100: #fff4cc;
 
-$white:        #ffffff;
-$gray50:       #f4f6fa;
-$gray100:      #ecf0f4;
-$gray200:      #dee2e6;
-$gray300:      #cfd4d9;
-$gray400:      #acb3ba;
-$gray500:      #8c939a;
-$gray600:      #6e757c;
-$gray700:      #575e64;
-$gray800:      #353a3f;
-$gray900:      #1f2429;
-$black:        #000000;
+$white: #ffffff;
+$gray50: #f4f6fa;
+$gray100: #ecf0f4;
+$gray200: #dee2e6;
+$gray300: #cfd4d9;
+$gray400: #acb3ba;
+$gray500: #8c939a;
+$gray600: #6e757c;
+$gray700: #575e64;
+$gray800: #353a3f;
+$gray900: #1f2429;
+$black: #000000;
 
-$red600:       #e9304b;
-$red500:       #ff4d67;
-$green600:     #3cc263;
-$orange600:    #ff8502;
+$red600: #e9304b;
+$red500: #ff4d67;
+$green600: #3cc263;
+$orange600: #ff8502;
 
-$naver-green:  #03c75a;
+$naver-green: #03c75a;
 $kakao-yellow: #ffe500;
-$apple-black:  #000000;
+$apple-black: #000000;
 
-$trait-blue50:   #ebf6ff;
-$trait-blue600:  #30a2ff;
-$trait-mint50:   #ecfaf8;
-$trait-mint600:  #38c8b5;
+$trait-blue50: #ebf6ff;
+$trait-blue600: #30a2ff;
+$trait-mint50: #ecfaf8;
+$trait-mint600: #38c8b5;
 $trait-marine50: #e8effd;
-$trait-marine600:#145ce6;
-$trait-red50:    #fdebed;
-$trait-red600:   #e9304b;
+$trait-marine600: #145ce6;
+$trait-red50: #fdebed;
+$trait-red600: #e9304b;
 
 $landing-black: #181a1c;
 
 // 맵 형태로도 정의하면 @each 활용하기 편리
 $colors: (
-        primary: $primary600,
-        danger:  $red600,
-        gray:    $gray500,
-        white:   $white,
-        black:   $black
+  primary: $primary600,
+  danger: $red600,
+  gray: $gray500,
+  white: $white,
+  black: $black
 );
 
 // 브레이크포인트
 $breakpoints: (
-        sm: 576px,
-        md: 768px,
-        lg: 1200px
+  sm: 576px,
+  md: 768px,
+  lg: 1200px
 );
 
 // spacing 단위
 $spacers: (
-        0: 0,
-        1: 0.25rem,
-        2: 0.5rem,
-        3: 1rem,
-        4: 1.5rem,
-        5: 2.5rem
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 2.5rem
 );
 
 // 폰트 스케일 & weight
 $font-sizes: (
-        11: 11px,
-        13: 13px,
-        16: 16px,
-        20: 20px
+  11: 11px,
+  13: 13px,
+  16: 16px,
+  20: 20px
 );
 $font-weights: (
-        300: 300,
-        400: 400,
-        500: 500,
-        600: 600
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600
 );

@@ -1,7 +1,17 @@
-.w-100 { width: 100% !important; }
-.w-50 { width: 50% !important; }
-.w-33 { width: 33.333% !important; }
-.w-25 { width: 25% !important; }
+.w-100 {
+  width: 100% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+.w-33 {
+  width: 33.333% !important;
+}
+.w-25 {
+  width: 25% !important;
+}
 @for $i from 5 through 95 {
-  .wp#{$i} { width: #{$i}% !important; }
+  .wp#{$i} {
+    width: #{$i}% !important;
+  }
 }

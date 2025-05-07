@@ -1,0 +1,8 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "exclude": ["dist", "node_modules"],
+  "extends": "./.nuxt/tsconfig.json"
+}
