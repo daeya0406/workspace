@@ -7,6 +7,8 @@ import ServicesView from '../views/ServicesView.vue';
 import PortfolioView from '../views/PortfolioView.vue';
 import ContactView from '../views/ContactView.vue';
 import LayoutGuideView from '../views/LayoutGuideView.vue';
+import SettingsView from '../views/SettingsView.vue';
+import SubLayout from '@/layouts/SubLayout.vue';
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
@@ -19,27 +21,32 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: AboutView
+      component: AboutView,
+      meta: { layout: SubLayout }
     },
     {
       path: '/services',
       name: 'services',
-      component: ServicesView
+      component: ServicesView,
+      meta: { layout: SubLayout }
     },
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: PortfolioView
+      component: PortfolioView,
+      meta: { layout: SubLayout }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: ContactView
+      component: ContactView,
+      meta: { layout: SubLayout }
     },
     {
       path: '/layout-guide',
       name: 'layout-guide',
-      component: LayoutGuideView
+      component: LayoutGuideView,
+      meta: { layout: SubLayout }
     },
     {
       path: '/login',
@@ -50,7 +57,16 @@ const router = createRouter({
       path: '/dashboard',
       name: 'dashboard',
       component: DashboardView,
-      meta: { requiresAuth: true }
+      meta: { 
+        requiresAuth: true,
+        layout: SubLayout
+      }
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: SettingsView,
+      meta: { layout: SubLayout }
     }
   ]
 });

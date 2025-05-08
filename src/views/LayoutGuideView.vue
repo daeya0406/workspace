@@ -1,128 +1,49 @@
 <template>
   <SubLayout>
-    <div class="layout-guide">
-      <div class="container">
-        <div class="page-title">
-          <h1>CSS Name Rule</h1>
-          <p>CSS 네이밍 규칙 정리 <span class="c-primary">(~ing)</span></p>
+    <div class="layout-guide-page">
+      <h1>레이아웃 가이드</h1>
+      
+      <section class="guide-section">
+        <h2>레이아웃 구조</h2>
+        <div class="guide-content">
+          <div class="structure-diagram">
+            <div class="header-box">Header</div>
+            <div class="main-content">
+              <div class="sidebar-box">Sidebar</div>
+              <div class="content-box">Main Content</div>
+            </div>
+            <div class="footer-box">Footer</div>
+          </div>
+          <div class="structure-description">
+            <p>기본 레이아웃은 Header, Sidebar, Main Content, Footer로 구성됩니다.</p>
+            <ul>
+              <li>Header: 상단 고정, 높이 64px</li>
+              <li>Sidebar: 좌측 고정, 너비 240px</li>
+              <li>Main Content: 가변 너비, 최소 높이 계산</li>
+              <li>Footer: 하단 고정, 높이 60px</li>
+            </ul>
+          </div>
         </div>
+      </section>
 
-        <!-- Section 1: Total Layout -->
-        <div class="section">
-          <div class="section__header">
-            <span class="section__number">1</span>
-            <span class="section__title">전체적인 Layout 구조</span>
-            <span class="section__arrow">▶</span>
+      <section class="guide-section">
+        <h2>제목 추가 규칙</h2>
+        <div class="guide-content">
+          <div class="title-example">
+            <h1>페이지 제목 (h1)</h1>
+            <h2>섹션 제목 (h2)</h2>
+            <h3>카드 제목 (h3)</h3>
           </div>
-          <div class="section__content">
-            <p>공통 Total Layout 구성 ( 다른 형태의 레이아웃일 경우, &lt;main&gt;에 다른 클래스로 전체적으로 적용 )</p>
-            <div class="flex-demo">
-              <div class="main-page">
-                <header>&lt;header&gt;</header>
-                <main>
-                  <h6><span class="c-class">&lt;main <span class="c-primary">class="<span class="c-opacity">{ 공통 레이아웃의 페이지명 : main-page, sub-page, layout-v2 등 }</span>"</span>&gt;</span></h6>
-                  <div class="container">
-                    <h6>&lt;div <span class="c-class">class="container"</span>&gt;</h6>
-                    <div class="inner">
-                      <h6>&lt;div <span class="c-class">class="inner"</span>&gt;</h6>
-                      <section>&lt;section <span class="c-class">class="main-section"</span>&gt</section>
-                    </div>
-                  </div>
-                  <div class="container">
-                    <h6>&lt;div <span class="c-class">class="container"</span>&gt;</h6>
-                    <div class="inner">
-                      <h6>&lt;div <span class="c-class">class="inner"</span>&gt;</h6>
-                      <div class="section-wrap">
-                        <h6>&lt;div <span class="c-class">class="section-wrap"</span>&gt;</h6>
-                        <section>&lt;section&gt</section>
-                        <section>&lt;section&gt</section>
-                        <section>&lt;section&gt</section>
-                      </div>
-                    </div>
-                  </div>
-                </main>
-                <footer>&lt;footer&gt;</footer>
-              </div>
-            </div>
-            <div class="code-box">
-              &lt;div class="main-page"&gt;<br>
-              &nbsp;&nbsp;&lt;header /&gt;<br>
-              &nbsp;&nbsp;&lt;main&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="inner"&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section /&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-              &nbsp;&nbsp;&lt;/main&gt;<br>
-              &nbsp;&nbsp;&lt;footer /&gt;<br>
-              &lt;/div&gt;
-            </div>
+          <div class="title-description">
+            <p>제목은 계층 구조를 따라 사용합니다:</p>
+            <ul>
+              <li>h1: 페이지의 메인 제목</li>
+              <li>h2: 주요 섹션 제목</li>
+              <li>h3: 카드나 작은 섹션의 제목</li>
+            </ul>
           </div>
         </div>
-
-        <!-- Section 2: 각종 Title 추가할때 -->
-        <div class="section">
-          <div class="section__header">
-            <span class="section__number">2</span>
-            <span class="section__title">각 Title 필요할때</span>
-            <span class="section__arrow">▶</span>
-          </div>
-          <div class="section__content">
-            <p>각 title 추가 규칙</p>
-            <div class="flex-demo">
-              <div class="main-page">
-                <main>
-                  <h6><span class="c-class">&lt;main&gt;</span></h6>
-                  <div class="container">
-                    <h6>&lt;div <span class="c-class">class="container"</span>&gt;</h6>
-                    <div class="inner">
-                      <h2>&lt;h2 <span class="c-primary">class="container-title"</span>&gt;<span class="c-opacity">{ container 제목 }</span>&lt;/h2&gt;</h2>
-                      <h6>&lt;div <span class="c-class">class="inner"</span>&gt;</h6>
-                      <section>&lt;section <span class="c-primary">class="main-section"</span> /&gt</section>
-                    </div>
-                  </div>
-                  <div class="container">
-                    <h6>&lt;div <span class="c-class">class="container"</span>&gt;</h6>
-                    <div class="inner">
-                      <h6>&lt;div <span class="c-class">class="inner"</span>&gt;</h6>
-                      <div class="container-title-wrap">
-                        <h6>&lt;div <span class="c-class">class="container-title-wrap"</span>&gt;</h6>
-                        <h2>&lt;h2 <span class="c-primary">class="container-title"</span>&gt;<span class="c-opacity">{ container 제목 }</span>&lt;/h2&gt;</h2>
-                        <h3>&lt;h3 <span class="c-primary">class="container-subtitle"</span>&gt;<span class="c-opacity">{ container 부제목 있을때 }</span>&lt;/h3&gt;</h3>
-                      </div>
-                      <div class="section-wrap">
-                        <h6>&lt;div <span class="c-class">class="section-wrap"</span>&gt;</h6>
-                        <section>&lt;section /&gt</section>
-                        <section>&lt;section /&gt</section>
-                        <section>&lt;section /&gt</section>
-                      </div>
-                    </div>
-                  </div>
-                </main>
-              </div>
-            </div>
-            <div class="code-box">
-              &lt;!-- .container만 추가할 때 --&gt;<br>
-              &lt;h2 class="container-title"&gt;container 제목&lt;/h2&gt;<br><br>
-              
-              &lt;!-- .container에 SubTitle까지 필요할 때 --&gt;<br>
-              &lt;div class="container-title-wrap"&gt;<br>
-              &nbsp;&nbsp;&lt;h2 class="container-title"&gt;container 제목&lt;/h2&gt;<br>
-              &nbsp;&nbsp;&lt;h3 class="container-subtitle"&gt;container 부제&lt;/h3&gt;<br>
-              &lt;/div&gt;<br><br>
-              
-              &lt;!-- section에 Title만 추가할 때 --&gt;<br>
-              &lt;h2 class="section-title"&gt;section 제목&lt;/h2&gt;<br><br>
-              
-              &lt;!-- section에 SubTitle까지 필요할 때 --&gt;<br>
-              &lt;div class="section-title-wrap"&gt;<br>
-              &nbsp;&nbsp;&lt;h2 class="section-title"&gt;section 제목&lt;/h2&gt;<br>
-              &nbsp;&nbsp;&lt;h3 class="section-subtitle"&gt;section 부제&lt;/h3&gt;<br>
-              &lt;/div&gt;
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
   </SubLayout>
 </template>
@@ -134,270 +55,189 @@ export default {
   name: 'LayoutGuideView',
   components: {
     SubLayout
-  },
-  mounted() {
-    document.querySelectorAll('.section__header').forEach(header => {
-      header.addEventListener('click', () => {
-        header.parentElement.classList.toggle('active')
-      })
-    })
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.layout-guide {
-  .page-title {
+.layout-guide-page {
+  padding: 2rem;
+  min-height: calc(100vh - 64px - 60px);
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
     text-align: center;
-    margin-bottom: 16px;
-    h1 {
-      margin-bottom: 8px;
+  }
+}
+
+.guide-section {
+  margin-bottom: 4rem;
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+  }
+}
+
+.guide-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.structure-diagram {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  .header-box {
+    background: #135ce6;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .main-content {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+    .sidebar-box {
+      background: #e9ecef;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
     }
-    p {
-      font-size: 16px;
+    
+    .content-box {
+      background: #fff;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      border: 2px dashed #dee2e6;
     }
   }
-
-  .section {
-    margin-bottom: 16px;
-    padding: 10px 30px;
+  
+  .footer-box {
+    background: #135ce6;
+    color: white;
+    padding: 1rem;
+    text-align: center;
     border-radius: 8px;
-    background: #fff;
-    border: 1px solid #ddd;
+  }
+}
 
-    .section__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      cursor: pointer;
-      padding: 10px 0;
-      font-size: 18px;
-    }
-
-    .section__number {
-      font-weight: bold;
-      color: #135ce6;
-      margin-right: 10px;
-    }
-
-    .section__title {
-      flex: 1;
-      font-size: 16px;
-      font-weight: 600;
-    }
-
-    .section__arrow {
-      font-size: 16px;
-      transition: all 0.3s ease;
-    }
-
-    .section__content {
-      display: none;
-      border-top: 1px solid #ddd;
-      padding: 20px 0;
-      > p {
-        font-size: 14px;
-      }
-    }
-
-    &.active {
-      .section__arrow {
-        transform: rotate(90deg);
+.structure-description {
+  p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #666;
+      
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
         color: #135ce6;
       }
-      .section__content {
-        display: block;
-      }
     }
   }
+}
 
-  .flex-demo {
-    margin: 10px 0 20px;
-    border: 1px solid #ccc;
-    padding: 16px;
-    display: flex;
-  }
-
-  section {
-    background: #ECF2FD;
-    border: 3px solid #145ce6;
-    color: #145ce6;
-    font-size: 14px;
-    padding: 10px;
-    min-height: 100px;
-    border-radius: 8px;
-    text-align: center;
-    flex: 1;
-  }
-
-  .code-box {
-    background: #F4F6FA;
-    padding: 10px 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    overflow-x: auto;
-    border-radius: 4px;
-  }
-
-  .main-page {
-    width: 100%;
-    .container {
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-    .container:not(:last-of-type) {
-      border-bottom: none;
-    }
-    header, footer {
-      display: block;
-      width: 100%;
-      border-radius: 8px;
-      padding: 16px;
-      background-color: #135ce6;
-      color: #fff;
-      text-align: center;
-      font-size: 15px;
-    }
-    main {
-      position: relative;
-      padding: 30px 8px 8px;
-      width: 100%;
-      margin: 8px auto;
-      border: 1px dashed #ccc;
-      h2 {
-        display: block;
-        padding: 0 12px;
-        text-align: center;
-        font-size: 13px;
-        font-weight: 400;
-        margin-bottom: 4px;
-        background: #FFF0B3;
-        color: #333;
-      }
-      h3 {
-        display: block;
-        padding: 0 12px;
-        font-size: 12px;
-        font-weight: 400;
-        margin-bottom: 4px;
-        background: #FFF0B3;
-        color: #333;
-      }
-      h6 {
-        position: absolute;
-        left: 8px;
-        top: 4px;
-        font-size: 14px;
-        font-weight: 400;
-      }
-    }
-    .container {
-      position: relative;
-      padding: 30px 8px 8px;
-      border: 1px dashed #ccc;
-      h6 {
-        position: absolute;
-        left: 8px;
-        top: 4px;
-        font-size: 14px;
-        font-weight: 400;
-      }
-    }
-    .inner {
-      position: relative;
-      max-width: 768px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 30px 8px 8px;
-      border: 1px dashed #ccc;
-      h6 {
-        position: absolute;
-        left: 8px;
-        top: 4px;
-        font-size: 14px;
-        font-weight: 400;
-      }
-      .section-wrap {
-        position: relative;
-        display: flex;
-        gap: 8px;
-        padding: 30px 8px 8px;
-        border: 1px dashed #145ce6;
-        h2 {
-          display: block;
-          padding: 0 8px;
-          font-size: 13px;
-          margin-bottom: 4px;
-        }
-        h3 {
-          display: block;
-          padding: 0 8px;
-          font-size: 12px;
-          margin-bottom: 4px;
-        }
-        h6 {
-          position: absolute;
-          left: 8px;
-          top: 4px;
-          font-size: 14px;
-          font-weight: 400;
-          color: #333;
-        }
-      }
-      .section-wrap:not(:last-of-type) {
-        border-bottom: none;
-      }
-    }
-  }
-
-  .container-title-wrap {
-    position: relative;
-    gap: 8px;
-    padding: 30px 8px 8px;
-    border: 1px dashed #ccc;
-    text-align: center;
-    background: #FFF7D9;
-    h6 {
-      position: absolute;
-      left: 14px;
-      top: 4px;
-      font-size: 14px;
-      font-weight: 400;
-    }
-  }
-
-  .section-title-wrap {
-    position: relative;
-    gap: 8px;
-    padding: 30px 8px 8px;
-    border: 1px dashed #ccc;
+.title-example {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
     text-align: left;
-    background: #FFF7D9;
-    .section-title {
-      text-align: left;
-    }
-    h6 {
-      position: absolute;
-      left: 14px;
-      top: 4px;
-      font-size: 14px;
-      font-weight: 400;
-    }
   }
-
-  .section-content {
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
     color: #333;
-    border: 1px dashed #ccc;
-    background: #fff;
-    p {
-      margin-bottom: 0;
-      padding: 40px 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.title-description {
+  p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #666;
+      
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #135ce6;
+      }
     }
   }
+}
 
-  .c-yellow { color: #FFE066; }
-  .c-class { color: #8556E3; }
-  .c-primary { color: #145CE6; }
-  .c-opacity { opacity: 0.6; }
+@media (max-width: 768px) {
+  .layout-guide-page {
+    padding: 1rem;
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .guide-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .structure-diagram {
+    .main-content {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 </style> 

@@ -68,8 +68,8 @@
 </template>
 
 <script>
-import DefaultLayout from '@/layouts/DefaultLayout.vue'
-import ProjectSlider from '@/components/ProjectSlider.vue'
+import DefaultLayout from '../layouts/DefaultLayout.vue'
+import ProjectSlider from '../components/ProjectSlider.vue'
 
 export default {
   name: 'HomeView',

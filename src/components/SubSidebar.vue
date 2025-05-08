@@ -7,20 +7,49 @@
     </div>
     
     <div class="sidebar__content">
-      <router-link to="/dashboard" class="sidebar__link">
-        <i class="fas fa-chart-line"></i>
-        <span>대시보드</span>
-      </router-link>
-      
-      <router-link to="/layout-guide" class="sidebar__link">
-        <i class="fas fa-code"></i>
-        <span>레이아웃 가이드</span>
-      </router-link>
-      
-      <router-link to="/settings" class="sidebar__link">
-        <i class="fas fa-cog"></i>
-        <span>설정</span>
-      </router-link>
+      <div class="sidebar__section">
+        <h3 class="sidebar__title" v-show="!isCollapsed">메인</h3>
+        <router-link to="/dashboard" class="sidebar__link">
+          <i class="fas fa-chart-line"></i>
+          <span>대시보드</span>
+        </router-link>
+        
+        <router-link to="/layout-guide" class="sidebar__link">
+          <i class="fas fa-code"></i>
+          <span>레이아웃 가이드</span>
+        </router-link>
+      </div>
+
+      <div class="sidebar__section">
+        <h3 class="sidebar__title" v-show="!isCollapsed">서비스</h3>
+        <router-link to="/about" class="sidebar__link">
+          <i class="fas fa-building"></i>
+          <span>회사 소개</span>
+        </router-link>
+        
+        <router-link to="/services" class="sidebar__link">
+          <i class="fas fa-cogs"></i>
+          <span>서비스</span>
+        </router-link>
+        
+        <router-link to="/portfolio" class="sidebar__link">
+          <i class="fas fa-briefcase"></i>
+          <span>포트폴리오</span>
+        </router-link>
+      </div>
+
+      <div class="sidebar__section">
+        <h3 class="sidebar__title" v-show="!isCollapsed">설정</h3>
+        <router-link to="/settings" class="sidebar__link">
+          <i class="fas fa-cog"></i>
+          <span>설정</span>
+        </router-link>
+        
+        <router-link to="/contact" class="sidebar__link">
+          <i class="fas fa-envelope"></i>
+          <span>문의하기</span>
+        </router-link>
+      </div>
     </div>
   </aside>
 </template>
@@ -43,15 +72,13 @@ export default {
 
 <style lang="scss" scoped>
 .sub-sidebar {
-  position: fixed;
-  top: 80px;
-  left: 0;
   width: 250px;
-  height: calc(100vh - 80px);
+  height: 100%;
   background-color: #fff;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   z-index: 900;
+  overflow-y: auto;
   
   &.collapsed {
     width: 60px;
@@ -72,6 +99,8 @@ export default {
   justify-content: flex-end;
   padding: 1rem;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .sidebar__toggle {
@@ -97,10 +126,28 @@ export default {
   padding: 1rem 0;
 }
 
+.sidebar__section {
+  margin-bottom: 1.5rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sidebar__title {
+  padding: 0 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .sidebar__link {
   display: flex;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   color: #666;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -130,12 +177,36 @@ export default {
 
 @media (max-width: 768px) {
   .sub-sidebar {
-    transform: translateX(-100%);
+    width: 60px;
     
-    &.collapsed {
-      transform: translateX(0);
-      width: 60px;
+    .sidebar__link {
+      padding: 1rem;
+      justify-content: center;
+      
+      span {
+        display: none;
+      }
     }
+  }
+}
+
+// 스크롤바 스타일링
+.sub-sidebar {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 2px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 }
 </style> 

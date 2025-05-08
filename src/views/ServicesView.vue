@@ -4,88 +4,53 @@
       <!-- 히어로 섹션 -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">서비스 소개</h1>
-          <p class="hero-subtitle">최신 기술과 전문성을 바탕으로 최고의 솔루션을 제공합니다</p>
+          <h1 class="hero-title">서비스</h1>
+          <p class="hero-subtitle">최신 기술과 전문성을 바탕으로 최고의 서비스를 제공합니다</p>
         </div>
       </section>
 
-      <!-- 서비스 상세 섹션 -->
-      <section class="services-detail">
+      <!-- 서비스 목록 섹션 -->
+      <section class="services-section">
         <div class="container">
-          <div class="service-item">
-            <div class="service-content">
-              <h2>웹 개발</h2>
-              <p>최신 웹 기술을 활용한 맞춤형 웹사이트 개발 서비스를 제공합니다. 반응형 디자인과 최적화된 성능으로 사용자 경험을 극대화합니다.</p>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>웹 개발</h3>
+              <p>최신 웹 기술을 활용한 반응형 웹사이트 개발</p>
               <ul class="service-features">
-                <li><i class="fas fa-check"></i> 반응형 웹 디자인</li>
-                <li><i class="fas fa-check"></i> 최적화된 성능</li>
-                <li><i class="fas fa-check"></i> SEO 최적화</li>
-                <li><i class="fas fa-check"></i> 보안 강화</li>
+                <li>반응형 웹 디자인</li>
+                <li>프론트엔드 개발</li>
+                <li>백엔드 개발</li>
+                <li>데이터베이스 설계</li>
               </ul>
             </div>
-            <div class="service-image">
-              <img src="https://via.placeholder.com/600x400" alt="웹 개발" />
-            </div>
-          </div>
-
-          <div class="service-item reverse">
-            <div class="service-content">
-              <h2>모바일 앱 개발</h2>
-              <p>iOS와 Android를 위한 네이티브 앱을 개발합니다. 사용자 친화적인 인터페이스와 안정적인 성능을 제공합니다.</p>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>모바일 앱</h3>
+              <p>iOS와 Android를 위한 네이티브 앱 개발</p>
               <ul class="service-features">
-                <li><i class="fas fa-check"></i> 네이티브 앱 개발</li>
-                <li><i class="fas fa-check"></i> 크로스 플랫폼 지원</li>
-                <li><i class="fas fa-check"></i> 푸시 알림</li>
-                <li><i class="fas fa-check"></i> 오프라인 지원</li>
+                <li>iOS 앱 개발</li>
+                <li>Android 앱 개발</li>
+                <li>크로스 플랫폼 개발</li>
+                <li>앱 스토어 등록</li>
               </ul>
             </div>
-            <div class="service-image">
-              <img src="https://via.placeholder.com/600x400" alt="모바일 앱" />
-            </div>
-          </div>
-
-          <div class="service-item">
-            <div class="service-content">
-              <h2>UI/UX 디자인</h2>
-              <p>사용자 중심의 직관적이고 아름다운 디자인을 제공합니다. 사용자 경험을 최우선으로 생각합니다.</p>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>UI/UX 디자인</h3>
+              <p>사용자 중심의 직관적인 디자인</p>
               <ul class="service-features">
-                <li><i class="fas fa-check"></i> 사용자 리서치</li>
-                <li><i class="fas fa-check"></i> 와이어프레임</li>
-                <li><i class="fas fa-check"></i> 프로토타입</li>
-                <li><i class="fas fa-check"></i> 디자인 시스템</li>
+                <li>UI 디자인</li>
+                <li>UX 디자인</li>
+                <li>브랜드 아이덴티티</li>
+                <li>디자인 시스템</li>
               </ul>
-            </div>
-            <div class="service-image">
-              <img src="https://via.placeholder.com/600x400" alt="UI/UX 디자인" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 프로세스 섹션 -->
-      <section class="process">
-        <div class="container">
-          <h2 class="section-title">개발 프로세스</h2>
-          <div class="process-steps">
-            <div class="process-step">
-              <div class="step-number">1</div>
-              <h3>요구사항 분석</h3>
-              <p>고객의 요구사항을 정확히 파악하고 분석합니다.</p>
-            </div>
-            <div class="process-step">
-              <div class="step-number">2</div>
-              <h3>기획 및 디자인</h3>
-              <p>최적의 솔루션을 기획하고 디자인합니다.</p>
-            </div>
-            <div class="process-step">
-              <div class="step-number">3</div>
-              <h3>개발</h3>
-              <p>최신 기술을 활용하여 개발을 진행합니다.</p>
-            </div>
-            <div class="process-step">
-              <div class="step-number">4</div>
-              <h3>테스트 및 배포</h3>
-              <p>철저한 테스트 후 안정적으로 배포합니다.</p>
             </div>
           </div>
         </div>
@@ -95,7 +60,7 @@
 </template>
 
 <script>
-import SubLayout from '@/layouts/SubLayout.vue'
+import SubLayout from '../layouts/SubLayout.vue'
 
 export default {
   name: 'ServicesView',
@@ -112,149 +77,87 @@ export default {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 80px 0;
+    padding: 160px 0;
     text-align: center;
   }
 
   .hero-title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .hero-subtitle {
-    font-size: 18px;
+    font-size: 24px;
     opacity: 0.9;
   }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  .section-title {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .services-detail {
+  .services-section {
     padding: 80px 0;
   }
 
-  .service-item {
+  .services-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: center;
-    margin-bottom: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .service-card {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
 
-    &.reverse {
-      direction: rtl;
-
-      .service-content {
-        direction: ltr;
-      }
+    &:hover {
+      transform: translateY(-5px);
     }
   }
 
-  .service-content {
-    h2 {
-      font-size: 28px;
-      font-weight: 600;
-      margin-bottom: 24px;
-    }
+  .service-icon {
+    font-size: 48px;
+    color: #135ce6;
+    margin-bottom: 24px;
+  }
 
-    p {
-      color: var(--gray-700);
-      line-height: 1.8;
-      margin-bottom: 24px;
-    }
+  .service-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .service-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 24px;
   }
 
   .service-features {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: left;
 
     li {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
-      color: var(--gray-700);
+      padding: 8px 0;
+      color: #666;
+      border-bottom: 1px solid #eee;
 
-      i {
-        color: var(--primary-600);
+      &:last-child {
+        border-bottom: none;
       }
     }
   }
 
-  .service-image {
-    img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  @media (max-width: 992px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
-  }
-
-  .process {
-    background-color: var(--gray-50);
-    padding: 80px 0;
-  }
-
-  .process-steps {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-  }
-
-  .process-step {
-    text-align: center;
-    padding: 32px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  .step-number {
-    width: 48px;
-    height: 48px;
-    background: var(--primary-600);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 auto 24px;
-  }
-
-  .process-step h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .process-step p {
-    color: var(--gray-600);
-    line-height: 1.6;
   }
 
   @media (max-width: 768px) {
-    .service-item {
-      grid-template-columns: 1fr;
-      gap: 32px;
-    }
-
-    .process-steps {
+    .services-grid {
       grid-template-columns: 1fr;
     }
   }

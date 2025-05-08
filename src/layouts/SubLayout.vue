@@ -1,10 +1,11 @@
 <template>
   <div class="sub-layout">
     <Header />
-    <SubSidebar ref="sidebar" />
-    <main class="main-content" :class="{ 'sidebar-collapsed': isSidebarCollapsed }">
-      <router-view />
-    </main>
+    <div class="layout-container">
+      <main class="main-content">
+        <slot></slot>
+      </main>
+    </div>
     <Footer />
   </div>
 </template>
@@ -12,24 +13,12 @@
 <script>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
-import SubSidebar from '@/components/SubSidebar.vue'
 
 export default {
   name: 'SubLayout',
   components: {
     Header,
-    Footer,
-    SubSidebar
-  },
-  data() {
-    return {
-      isSidebarCollapsed: false
-    }
-  },
-  mounted() {
-    this.$refs.sidebar.$watch('isCollapsed', (newValue) => {
-      this.isSidebarCollapsed = newValue
-    })
+    Footer
   }
 }
 </script>
@@ -41,26 +30,27 @@ export default {
   flex-direction: column;
 }
 
+.layout-container {
+  flex: 1;
+  display: flex;
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
+  position: relative;
+}
+
 .main-content {
   flex: 1;
-  margin-left: 250px;
-  margin-top: 80px;
   padding: 2rem;
-  transition: margin-left 0.3s ease;
-  
-  &.sidebar-collapsed {
-    margin-left: 60px;
-  }
+  background-color: #f8f9fa;
 }
 
 @media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+  }
+
   .main-content {
-    margin-left: 0;
     padding: 1rem;
-    
-    &.sidebar-collapsed {
-      margin-left: 60px;
-    }
   }
 }
 </style> 

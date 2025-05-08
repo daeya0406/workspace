@@ -5,28 +5,28 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">회사 소개</h1>
-          <p class="hero-subtitle">혁신적인 디지털 솔루션을 제공하는 당신의 신뢰할 수 있는 파트너</p>
+          <p class="hero-subtitle">혁신적인 기술과 창의적인 솔루션으로 미래를 만들어갑니다</p>
         </div>
       </section>
 
       <!-- 회사 소개 섹션 -->
-      <section class="about-content">
+      <section class="about-section">
         <div class="container">
-          <div class="about-grid">
+          <div class="about-content">
             <div class="about-text">
               <h2>우리의 이야기</h2>
-              <p>2010년 설립된 이래로, 우리는 고객의 디지털 성공을 위해 최선을 다해왔습니다. 최신 기술과 창의적인 솔루션을 통해 비즈니스의 성장을 지원합니다.</p>
-              <p>우리의 전문성과 경험은 웹 개발, 모바일 앱 개발, UI/UX 디자인 등 다양한 분야에서 빛을 발합니다. 각 프로젝트마다 최고의 결과물을 제공하기 위해 노력합니다.</p>
+              <p>저희는 2020년에 설립된 이래로, 디지털 혁신을 선도하는 기업으로 성장해왔습니다. 최신 기술과 창의적인 접근 방식을 통해 고객의 비즈니스 성장을 지원하고 있습니다.</p>
+              <p>우리의 목표는 단순한 기술 제공을 넘어, 고객의 비즈니스 성공을 위한 진정한 파트너가 되는 것입니다.</p>
             </div>
             <div class="about-image">
-              <img src="https://via.placeholder.com/600x400" alt="회사 이미지" />
+              <img src="https://via.placeholder.com/600x400" alt="회사 이미지">
             </div>
           </div>
         </div>
       </section>
 
       <!-- 핵심 가치 섹션 -->
-      <section class="values">
+      <section class="values-section">
         <div class="container">
           <h2 class="section-title">핵심 가치</h2>
           <div class="values-grid">
@@ -35,44 +35,50 @@
                 <i class="fas fa-lightbulb"></i>
               </div>
               <h3>혁신</h3>
-              <p>끊임없는 혁신을 통해 최고의 솔루션을 제공합니다.</p>
+              <p>끊임없는 혁신을 통해 새로운 가치를 창출합니다</p>
             </div>
             <div class="value-card">
               <div class="value-icon">
                 <i class="fas fa-handshake"></i>
               </div>
               <h3>신뢰</h3>
-              <p>고객과의 신뢰 관계를 최우선으로 생각합니다.</p>
+              <p>고객과의 신뢰 관계를 최우선으로 생각합니다</p>
             </div>
             <div class="value-card">
               <div class="value-icon">
                 <i class="fas fa-users"></i>
               </div>
               <h3>협력</h3>
-              <p>팀워크를 통해 더 큰 가치를 창출합니다.</p>
+              <p>팀워크를 통해 더 큰 성과를 만들어냅니다</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- 팀 소개 섹션 -->
-      <section class="team">
+      <section class="team-section">
         <div class="container">
           <h2 class="section-title">우리의 팀</h2>
           <div class="team-grid">
-            <div class="team-member">
-              <img src="https://via.placeholder.com/300x300" alt="팀원 1" />
-              <h3>홍길동</h3>
+            <div class="team-card">
+              <div class="team-image">
+                <img src="https://via.placeholder.com/300x300" alt="팀원 1">
+              </div>
+              <h3>김철수</h3>
               <p>CEO</p>
             </div>
-            <div class="team-member">
-              <img src="https://via.placeholder.com/300x300" alt="팀원 2" />
-              <h3>김철수</h3>
+            <div class="team-card">
+              <div class="team-image">
+                <img src="https://via.placeholder.com/300x300" alt="팀원 2">
+              </div>
+              <h3>이영희</h3>
               <p>CTO</p>
             </div>
-            <div class="team-member">
-              <img src="https://via.placeholder.com/300x300" alt="팀원 3" />
-              <h3>이영희</h3>
+            <div class="team-card">
+              <div class="team-image">
+                <img src="https://via.placeholder.com/300x300" alt="팀원 3">
+              </div>
+              <h3>박지민</h3>
               <p>디자인 디렉터</p>
             </div>
           </div>
@@ -83,7 +89,7 @@
 </template>
 
 <script>
-import SubLayout from '@/layouts/SubLayout.vue'
+import SubLayout from '../layouts/SubLayout.vue'
 
 export default {
   name: 'AboutView',
@@ -100,39 +106,26 @@ export default {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 80px 0;
+    padding: 160px 0;
     text-align: center;
   }
 
   .hero-title {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .hero-subtitle {
-    font-size: 18px;
+    font-size: 24px;
     opacity: 0.9;
   }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
-  .section-title {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .about-content {
+  .about-section {
     padding: 80px 0;
   }
 
-  .about-grid {
+  .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 48px;
@@ -141,19 +134,16 @@ export default {
 
   .about-text {
     h2 {
-      font-size: 28px;
-      font-weight: 600;
+      font-size: 36px;
+      font-weight: 700;
       margin-bottom: 24px;
     }
 
     p {
-      color: var(--gray-700);
+      font-size: 18px;
       line-height: 1.8;
+      color: #666;
       margin-bottom: 16px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 
@@ -161,13 +151,20 @@ export default {
     img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
   }
 
-  .values {
-    background-color: var(--gray-50);
+  .values-section {
+    background-color: #f8f9fa;
     padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 48px;
   }
 
   .values-grid {
@@ -180,8 +177,8 @@ export default {
     background: white;
     padding: 32px;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
     transition: transform 0.2s;
 
     &:hover {
@@ -190,23 +187,23 @@ export default {
   }
 
   .value-icon {
-    font-size: 40px;
-    color: var(--primary-600);
+    font-size: 48px;
+    color: #135ce6;
     margin-bottom: 24px;
   }
 
   .value-card h3 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 16px;
   }
 
   .value-card p {
-    color: var(--gray-600);
+    color: #666;
     line-height: 1.6;
   }
 
-  .team {
+  .team-section {
     padding: 80px 0;
   }
 
@@ -216,33 +213,42 @@ export default {
     gap: 32px;
   }
 
-  .team-member {
+  .team-card {
     text-align: center;
+  }
 
+  .team-image {
+    margin-bottom: 24px;
+    
     img {
-      width: 200px;
-      height: 200px;
+      width: 100%;
       border-radius: 50%;
-      margin-bottom: 24px;
-      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .team-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .team-card p {
+    color: #666;
+  }
+
+  @media (max-width: 992px) {
+    .about-content {
+      grid-template-columns: 1fr;
     }
 
-    h3 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    p {
-      color: var(--gray-600);
+    .values-grid,
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 768px) {
-    .about-grid {
-      grid-template-columns: 1fr;
-    }
-
     .values-grid,
     .team-grid {
       grid-template-columns: 1fr;
